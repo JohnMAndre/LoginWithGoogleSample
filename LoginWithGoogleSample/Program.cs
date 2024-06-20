@@ -20,7 +20,6 @@ builder.Services.AddAuthentication(options =>
 {
     options.ClientId = builder.Configuration.GetValue<string>("Authentication:Google:client_id");
     options.ClientSecret = builder.Configuration.GetValue<string>("Authentication:Google:client_secret");
-    options.CallbackPath = "/sigin-google";
     options.SaveTokens = true;
 });
 
